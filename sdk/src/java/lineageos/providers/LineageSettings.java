@@ -2103,6 +2103,16 @@ public final class LineageSettings {
                 sAlwaysTrueValidator;
 
         /**
+         * Haptic feedback on brightness slider
+         * @hide
+         */
+        public static final String QS_BRIGHTNESS_SLIDER_HAPTIC = "qs_brightness_slider_haptic";
+
+        /** @hide */
+        public static final Validator QS_BRIGHTNESS_SLIDER_HAPTIC_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Mapping of validators for all system settings.  This map is used to validate both valid
          * keys as well as validating the values for those keys.
          *
@@ -2266,6 +2276,8 @@ public final class LineageSettings {
                     ENABLE_TASKBAR_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
+            VALIDATORS.put(QS_BRIGHTNESS_SLIDER_HAPTIC,
+                    QS_BRIGHTNESS_SLIDER_HAPTIC_VALIDATOR);
         };
         // endregion
     }
